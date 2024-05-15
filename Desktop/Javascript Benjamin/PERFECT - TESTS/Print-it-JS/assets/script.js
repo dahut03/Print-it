@@ -26,11 +26,11 @@ const dotsContainer = document.querySelector('.dots');
 slides.forEach(slide => {
     const slideElement = document.createElement('div');
     slideElement.classList.add('slide');
-    slideElement.innerHTML = `<img src="${slide.image}" alt="Slide"><div class="tagline">${slide.tagLine}</div>`;
+    slideElement.innerHTML = `<img src="${slide.image}" alt="Diapositive"><div class="tagline">${slide.tagLine}</div>`;
     slidesContainer.appendChild(slideElement);
 });
 
-// Ajouter les flèches
+// Selectionner les flèches
 const prevArrow = document.querySelector('.arrow.prev');
 const nextArrow = document.querySelector('.arrow.next');
 
